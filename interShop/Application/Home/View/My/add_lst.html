@@ -1,0 +1,92 @@
+<layout name="Common/layout" />
+<include file="Common/nav" />
+<div id="main">
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Home/css/userc/userc.css">
+    <script type="text/javascript" charset="UTF-8" src="__PUBLIC__/Home/js/artdialog/artDialog.js?skin=opera"></script>
+    <script type="text/javascript" charset="UTF-8" src="__PUBLIC__/Home/js/artdialog/plugins/iframeTools.js"></script>
+    <div class="container clearfix">
+        <div id="widget_sub_navs">
+            <div class="sidebar fl" style="width:240px;">
+                <h2 class="header">用户中心</h2>
+                <div class="box">
+                    <h2>交易管理</h2>
+                    <ul class="menu-list">
+                        <li><a href="<?php echo U('My/order'); ?>">我的订单<span class="l-triangle"></span></a></li>
+                        <li><a href="">退款申请<span class="l-triangle"></span></a></li>
+                        <li><a href="">我的关注<span class="l-triangle"></span></a></li>
+                    </ul>
+                    <h2>客户服务</h2>
+                    <ul class="menu-list">
+                        <li><a href="">商品咨询<span class="l-triangle"></span></a></li>
+                        <li><a href="">商品评价<span class="l-triangle"></span></a></li>
+                        <li><a href="">我的消息<span class="l-triangle"></span></a></li>
+                    </ul>
+                    <h2>账户管理</h2>
+                    <ul class="menu-list">
+                        <li><a href="">个人资料<span class="l-triangle"></span></a></li>
+                        <li><a href="">账户安全<span class="l-triangle"></span></a></li>
+                        <li><a href="">账号绑定<span class="l-triangle"></span></a></li>
+                        <li><a class="current" href="<?php echo U('My/add_lst'); ?>">收货地址<span class="l-triangle"></span></a></li>
+                        <li><a href="">我的优惠券<span class="l-triangle"></span></a></li>
+                        <li><a href="">账户金额<span class="l-triangle"></span></a></li>
+                        <li><a href="">我的积分<span class="l-triangle"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <div class="content clearfix uc-content">
+        <h1 class="title"><span>收货地址：</span></h1>
+        <div class="mt20 tr">
+            <a id="address_other" class="btn btn-main" href="javascript:;">添加新地址</a>
+        </div>
+        <table class="simple address-list mt20">
+            <tr>
+                <th>收货人</th>
+                <th>所在地区</th>
+                <th>街道地址</th>
+                <th>邮编</th>
+                <th>电话/手机</th>
+                <th></th>
+                <th>操作</th>
+            </tr>
+            <tr class="even">
+                <td>刘乐</td>
+                <td>黑龙江,黑河市,五大连池市</td>
+                <td>桐柏路开元新城</td>
+                <td>450000</td>
+                <td>15890149835/15890149835 </td>
+                <td><b>默认地址</b></td>
+                <td>
+                    <a  href="javascript:;" data-value="26" class="modify">修改</a> | <a href="javascript:confirm_action('/index.php?con=ucenter&act=address_del&id=26')">删除</a>
+                </td>
+            </tr>
+            <tr class="odd">
+                <td>刘乐</td>
+                <td>浙江省,绍兴市,诸暨市</td>
+                <td>桐柏路开元新城</td>
+                <td>450000</td>
+                <td>15890149835/15890149835 </td>
+                <td></td>
+                <td>
+                    <a  href="javascript:;" data-value="25" class="modify">修改</a> | <a href="javascript:confirm_action('/index.php?con=ucenter&act=address_del&id=25')">删除</a>
+                </td>
+            </tr>
+        </table>
+        <div class="mt10">最多可保存20个有效地址！</div>
+    </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+    $("#address_other").on("click",function(){
+        art.dialog.open('/index.php/Home/Address/add',{width:960,height:462,lock:true});
+        return false;
+    })
+
+    $(".address-list .modify").each(function(){
+
+        $(this).on("click",function(){
+            art.dialog.open('/index.php/Home/Address/edit',{width:960,height:462,lock:true});
+        });
+    });
+</script>

@@ -1,0 +1,35 @@
+<layout name="layout" />
+<!-- 搜索 -->
+<div class="page-container">
+	<form action="__ACTION__" method="GET" name="search_form">
+		<div class="text-c"> 角色名称：
+			<input type="text" class="input-text" style="width:250px"   name="role_name" value="<?php echo I('get.role_name'); ?>" />
+			<button type="submit" class="btn btn-success"><i class="Hui-iconfont">&#xe665;</i> 搜角色</button>
+		</div>
+	</form>
+	<div class="cl pd-5 bg-1 bk-gray mt-20">
+		<span class="l"> <a href="<?php echo U('add');?>"  class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加角色</a></span>
+	</div>
+
+	<!-- 列表 -->
+	<table class="table table-border table-bordered table-bg">
+		<thead>
+		<tr class="text-c">
+			<th>角色名称</th>
+			<th>权限信息</th>
+			<th>操作</th>
+		</tr>
+		</thead>
+		<tbody>
+		<?php foreach ($data as $k => $v): ?>
+		<tr class="text-c">
+			<td><?php echo $v['role_name']; ?></td>
+			<td><?php echo $v['pri_name']; ?></td>
+			<td class="td-manage"><a title="编辑" href="<?php echo U('edit?id='.$v['id']); ?>"  class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
+				<a title="删除" href="<?php echo U('delete?id='.$v['id']); ?>" onclick="return confirm('确定要删除吗？');" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a>
+			</td>
+		</tr>
+		<?php endforeach; ?>
+		</tbody>
+	</table>
+</div>

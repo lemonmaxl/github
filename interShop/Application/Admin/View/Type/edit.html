@@ -1,0 +1,17 @@
+<layout name="layout" />
+<div class="page-container">
+    <form class="form form-horizontal" id="form-admin-add" method="POST" action="__SELF__">
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>类型名称：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="<?php echo $data['type_name']; ?>"   name="type_name" style="width: 30%;">
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+                <input class="btn btn-success radius" type="reset" value="&nbsp;&nbsp;重置&nbsp;&nbsp;">
+            </div>
+        </div>
+    </form>
+</div>

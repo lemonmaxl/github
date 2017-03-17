@@ -1,0 +1,68 @@
+<layout name="layout" />
+<div class="page-container">
+	<form method="get" action="__SELF__">
+		<div class="text-c">&ensp;
+			属性名称：
+			<input type="text" name="attr_name" style="width:250px" class="input-text" value="<?php echo I('get.attr_name'); ?>">
+			类型:
+			<?php $typeId = I('get.type_id');?>
+			<span class="select-box" style="width: 15%;">
+			<select name="type_id" class="select">
+				<?php foreach($typeData as $k => $v){
+					if($v['id'] == $typeId)
+						$select = 'selected="selected"';
+					else
+						$select = '';
+				?>
+				<option <?php echo $select;?> value="<?php echo $v['id'];?>"><?php echo $v['type_name'];?></option>
+				<?php } ?>
+			</select>
+			</span>
+			属性的类型：
+			<input type="radio" name='attr_type' value="-1" class='radio-box' <?php if(I('get.attr_type', -1) == -1) echo 'checked="checked"'; ?> />全部
+			<input type="radio" name='attr_type' value="可选" class='radio-box' <?php if(I('get.attr_type', -1) == '可选') echo 'checked="checked"'; ?> />可选
+			<input type="radio" name='attr_type' value="唯一" class='radio-box' <?php if(I('get.attr_type', -1) == '唯一') echo 'checked="checked"'; ?> />唯一
+			<button class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜属性</button>
+		</div>
+	</form>
+	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a class="btn btn-primary radius" href="<?php echo U('Attribute/add?type_id='.I('get.type_id'));?>"><i class="Hui-iconfont">&#xe600;</i> 属性添加</a></span> <span class="r">共有数据：<strong>54</strong> 条</span> </div>
+	<form action="__SELF__" method="post">
+		<div class="mt-20">
+			<table class="table table-border table-bordered table-bg table-hover table-sort">
+				<thead>
+				<tr class="text-c">
+					<th>属性名</th>
+					<th>属性的类型</th>
+					<th>属性可选值,多个值用,隔开</th>
+					<th>类型&ID</th>
+					<th>操作</th>
+				</tr>
+				</thead>
+
+				<tbody>
+				<?php foreach ($data as $k => $v): ?>
+				<tr class="text-c va-m">
+
+					<td><?php echo $v['attr_name']; ?></td>
+					<td><?php echo $v['attr_type']; ?></td>
+					<td class="text-l"><?php echo $v['attr_option_value']; ?></td>
+					<td><?php echo $v['type_id']; ?>--<?php foreach($typeData as $v){if($v['id'] == $typeId) echo $v['type_name'];}?></td>
+					<td class="td-manage">
+						<a style="text-decoration:none" class="ml-5" href="<?php echo U('edit?id='.$v['id'].'&type_id='.$typeId); ?>" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a>
+						<a style="text-decoration:none" class="ml-5" onclick="return confirm('确定删除吗?')" href="<?php echo U('delete?id='.$v['id'].'&type_id='.$typeId); ?>" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a>
+					</td>
+				</tr>
+				<?php endforeach; ?>
+				</tbody>
+				<tbody>
+				<?php if(preg_match('/\d/', $page)): ?>
+				<tr><td align="right" nowrap="true" colspan="99" height="30"><?php echo $page; ?></td></tr>
+				<?php endif; ?>
+				</tbody>
+			</table>
+
+		</div>
+	</form>
+
+</div>
+

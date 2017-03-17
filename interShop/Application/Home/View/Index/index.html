@@ -1,0 +1,193 @@
+<layout name="Common/layout" />
+<include file="Common/nav" />
+<div id="main">
+<div class="center">
+    <div class="center_top">
+        <!-- <==========================================================> -->
+        <!-- 轮播图开始区域 -->
+        <!-- <div id="bannar"> -->
+        <div class="content_middle">
+            <div class="common_da">
+
+                <a class="common btnLeft"href="javascript:;"></a>
+                <a class="common btnRight"href="javascript:;"></a>
+
+            </div>
+
+
+            <ul>
+                <li style="background:url(__PUBLIC__/Home/lunbo/images/bg1.jpeg) no-repeat center center;opacity: 100;filter: alpha(opacity=1);"></li>
+                <li style="background:url(__PUBLIC__/Home/lunbo/images/bg2.jpeg) no-repeat center center;"></li>
+                <li style="background:url(__PUBLIC__/Home/lunbo/images/bg3.jpeg) no-repeat center center;"></li>
+                <li style="background:url(__PUBLIC__/Home/lunbo/images/bg4.jpeg) no-repeat center center;"></li>
+                <li style="background:url(__PUBLIC__/Home/lunbo/images/bg5.jpeg) no-repeat center center;"></li>
+                <li style="background:url(__PUBLIC__/Home/lunbo/images/bg6.jpeg) no-repeat center center;"></li>
+            </ul>
+            <div class="table">
+                <a class="small_active"href="javascript:;">跨年购心动价</a>
+                <a href="javascript:;">五折秒杀周边游</a>
+                <a href="javascript:;"> 跟台湾宝贝趴趴走</a>
+                <a href="javascript:;">国内最高减1000</a>
+                <a href="javascript:;">迪拜新年特惠</a>
+                <a href="javascript:;">日韩东南亚专场</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="top-show container">
+    <div class="sub-1">
+        <div class="tab ">
+            <ul class="tab-head">
+                <li><div>促销抢购</div><i></i></li>
+                <li><div>潮流新品</div><i></i></li>
+                <li><div>今日推荐</div><i></i></li>
+                <li><div>热卖</div><i></i></li>
+            </ul>
+            <div class="tab-body">
+                <!--1f促销-->
+                <ul class="row clearfix">
+                    <?php foreach($pro_data as $k => $v){?>
+                    <li class="col-1">
+                        <dl class="product">
+                            <dt class="img">
+                                <a href="<?php echo U("goods?id=".$v["id"]); ?>"><?php showImage($v["logo"],220);?></a>
+                            </dt>
+                            <dd class="title"><a href="<?php echo U("goods?id=".$v["id"]); ?>"><?php echo $v["goods_name"];?></a></dd>
+                            <dd class="price"><i>￥</i><?php echo $v["promote_price"];?></dd>
+                        </dl>
+                    </li>
+                    <?php } ?>
+                    </ul>
+                <!-- 2f新品-->
+                <ul class="row clearfix">
+                    <?php foreach($ngoods as $k => $v){ ?>
+                    <li class="col-1">
+                        <dl class="product">
+                            <dt class="img">
+                                <a href="<?php echo U("goods?id=".$v["id"]);?>"><?php showImage($v["logo"],220); ?></a>
+                            </dt>
+                            <dd class="title"><a href="<?php echo U("goods?id=".$v["id"]);?>"><?php echo $v["goods_name"];?></a></dd>
+                            <dd class="price"><i>￥</i><?php echo $v["promote_price"];?></dd>
+                        </dl>
+                    </li>
+                    <?php }?>
+                </ul>
+                <!--1f推荐-->
+                <ul class="row clearfix">
+                    <?php foreach($rgoods as $k => $v){?>
+                    <li class="col-1">
+                        <dl class="product">
+                            <dt class="img">
+                                <a href="<?php echo U("goods?id=".$v["id"]);?>"><?php showImage($v["logo"],220);?></a>
+                            </dt>
+                            <dd class="title"><a href="<?php echo U("goods?id=".$v["id"]);?>"><?php echo $v["goods_name"];?></a></dd>
+                            <dd class="price"><i>￥</i><?php echo $v["promote_price"];?></dd>
+                        </dl>
+                    </li>
+                    <?php } ?>
+                </ul>
+                <!--1f热卖-->
+                <ul class="row clearfix">
+                    <?php foreach($hgoods as $k => $v){?>
+                    <li class="col-1">
+                        <dl class="product">
+                            <dt class="img">
+                                <a href="<?php echo U("goods?id=".$v["id"]);?>"><?php showImage($v["logo"],220);?></a>
+                            </dt>
+                            <dd class="title"><a href="<?php echo U("goods?id=".$v["id"]);?>"><?php echo $v["goods_name"];?></a></dd>
+                            <dd class="price"><i>￥</i><?php echo $v["promote_price"];?></dd>
+                        </dl>
+                    </li>
+                    <?php } ?>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sub-2">
+        <div class="news-list">
+            <div class="header"></div>
+            <ul class="body">
+                <li>
+                    <a href="" target="_blank"><img src="__PUBLIC__/Home/static/11.jpg" style="width:120px;"/></a>
+                </li>
+                <li>
+                    <a href="" target="_blank"><img src="__PUBLIC__/Home/static/22.jpg" style="width:120px;"/></a>
+                </li>
+                <li>
+                    <a href="" target="_blank"><img src="__PUBLIC__/Home/static/33.png" style="width:120px;"/></a>
+                </li>
+                <li>
+                    <a href="" target="_blank"><img src="__PUBLIC__/Home/static/44.jpg" style="width:120px;"/></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- 商品展示 -->
+<div class="lists container">
+<?php
+// 楼层分类开始
+$i = 0;
+foreach($recCat as $k => $v){
+    $i++;
+    ?>
+    <div>
+        <div class="title-nav">
+            <h3 class="title"><a href="" style="color: #000;"><?php echo $i;?>F <?php echo $v["cat_name"];?></a></h3>
+        </div>
+        <div class="item">
+            <div class="sub-1">
+                <div class="slider clearfix" style="height: 360px;" config-data={ "direction": "left"}>
+                    <ul class="cycle-slideshow">
+                        <li style="background-image:url(__PUBLIC__/Home/data/uploads/2014/05/13/9359c86ef905712427d3435d230990f2.jpg) "><a href="/" target="_blank"></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <!-- 二级分类-->
+                    <ul class="category-tags">
+                        <?php foreach($v["subCat"] as $k1 => $v1){ ?>
+                        <li><a href=""><?php echo $v1["cat_name"];?></a></li>
+                        <?php }?>
+                    </ul>
+                </div>
+            </div>
+            <div class="sub-2">
+
+                <ul class="index-products">
+                    <!-- pic show-->
+                    <?php foreach($v["subCat"] as $k1 => $v1){?>
+                    <?php foreach($v1["goods"] as $k2 => $v2){?>
+                    <li>
+                        <dl class="product">
+                           <dt class="img">
+                               <a href="<?php echo U("Index/goods?id=".$v2["id"])?>"><?php showImage($v2["logo"],220);?></a>
+                           </dt>
+                           <dd class="title"><a href="<?php echo U("Index/goods?id=".$v2["id"])?>"><?php echo $v2["goods_name"];?></a></dd>
+                           <dd class="price"><?php echo $v2["shop_price"];?>元</dd>
+                       </dl>
+                   </li>
+                    <?php } ?>
+                    <?php } ?>
+                </ul>
+
+           </div>
+       </div>
+   </div>
+<?php } ?>
+</div>
+</div>         <!-- 商品展示 -->
+
+    <!--  主控区域 -->
+
+
+    <script>
+$(".slider").Slider();
+
+
+    </script>
+

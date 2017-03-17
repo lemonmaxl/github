@@ -1,0 +1,111 @@
+<?php
+$catModel = new Admin\Model\CategoryModel;
+$catdata = $catModel->getNavData();
+?>
+
+<div class="headNav">
+
+    <script src="__PUBLIC__/Home/js/navjs/head.js"></script>
+    <div class="navCon w1020">
+        <div class="navCon-cate fl navCon_on">
+            <div class="navCon-cate-title"> <a href="#"><i class="Hui-iconfont">&#xe681;</i>&ensp;&ensp;全部商品分类</a></div>
+            <div class="cateMenu hide">
+                <ul>
+                    <?php foreach($catdata as $k => $v){ ?>
+                    <li style="border-top: none;">
+                        <div class="cate-tag"> <strong><a href="<?php echo U('Search/cat_search?cat_id='.$v['id'],'',false);?>"><?php echo $v["cat_name"];?></a></strong>
+                            <div class="listModel">
+                                <p>
+                                    <?php foreach($v["children"] as $k1 => $v1){ ?>
+                                <a href="<?php echo U('Search/cat_search?cat_id='.$v1['id'],'',false);?>"><?php echo $v1["cat_name"];?></a>
+                                    <?php } ?>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-item hide">
+                            <ul class="itemleft">
+                                <?php foreach($v["children"] as $k1 => $v1){?>
+                                <dl>
+                                    <dt><?php echo $v["cat_name"];?></dt>
+                                    <dd>
+                                        <?php foreach($v1["children"] as $k2 => $v2){?>
+                                        <a href="<?php echo U('Search/cat_search?cat_id='.$v2['id'],'',false);?>"><?php echo $v2["cat_name"];?></a>
+                                        <?php } ?>
+                                    </dd>
+                                </dl>
+                                <div class="fn-clear"></div>
+                                <?php } ?>
+                            </ul>
+                            <ul class="itemright">
+                                <dl>
+                                    <dt>促销信息</dt>
+                                </dl>
+                                <div class="news-list">
+                                    <p> <span class="red">[杜康]</span> <a href="">酒体窖香幽雅、陈香舒适,只需156元，值得一试的好酒</a> </p>
+                                    <p> <span class="red">[红星]</span> <a href="">经典红星153元热销千瓶，敢于全网誓比价！</a> </p>
+                                    <p> <span class="red">[太白]</span> <a href="">中国第一诗酒，全场满200减50</a> </p>
+                                </div>
+                                <dl>
+                                    <dt>促销活动</dt>
+                                </dl>
+                            </ul>
+                        </div>
+                    </li>
+                    <?php } ?>
+                    <li>
+                        <div class="cate-tag"> <strong><a href="#">葡萄酒</a></strong>
+                            <div class="listModel">
+                                <p> <a href="">中国</a> <a href="">法国</a> <a href="">智利</a> <a href="">葡萄牙</a> </p>
+                            </div>
+                        </div>
+                        <div class="list-item hide">
+                            <ul class="itemleft">
+                                <dl>
+                                    <dt>产区</dt>
+                                    <dd> <a href="">澳大利亚</a> </dd>
+                                </dl>
+                                <div class="fn-clear"></div>
+                                <dl>
+                                    <dt>类型</dt>
+                                    <dd> <a href="">红葡萄酒</a> </dd>
+                                </dl>
+                                <div class="fn-clear"></div>
+                                <dl>
+                                    <dt>品种</dt>
+                                    <dd> <a href="">芭贝拉</a> </dd>
+                                </dl>
+                                <div class="fn-clear"></div>
+                            </ul>
+                            <ul class="itemright">
+                                <dl>
+                                    <dt>促销信息</dt>
+                                </dl>
+                                <div class="news-list">
+                                    <p> <span class="red">[加州乐事]</span> <a href="">美国爆款红酒，超市89元，68元特价售</a> </p>
+                                    <p> <span class="red">[华尔兹]</span> <a href="">德国经典款，39元继续热卖中</a> </p>
+                                    <p> <span class="red">[贵妇]</span> <a href="">法国进口红酒，购满6瓶每瓶仅需38元，超值专享价</a> </p>
+                                </div>
+                                <dl>
+                                    <dt>促销活动</dt>
+                                </dl>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="float-list-dnav"> <a href="">新品</a> <a href="">清仓</a> <a href="">多买优惠</a> </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="navCon-menu fl">
+            <ul>
+                <li class="curMenu"><a  href="<?php echo U('Index/index'); ?>">首页</a></li>
+                <li class="curMenu"><a href="">购酒团</a></li>
+                <li class="curMenu"><a href="">我爱小酒版</a></li>
+                <li class="curMenu"><a href="">名家鉴赏</a></li>
+                <li class="curMenu"><a href="#">名庄酒窖</a></li>
+                <li class="curMenu"><a href="#">VIP专场</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

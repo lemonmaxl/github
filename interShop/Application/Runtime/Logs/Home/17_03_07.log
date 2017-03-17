@@ -1,0 +1,499 @@
+[ 2017-03-07T11:02:54+08:00 ] ::1 /index.php/Home/Index/login.html
+ERR: 非法操作:login
+
+[ 2017-03-07T11:02:58+08:00 ] ::1 /index.php/Home/Index/regist.html
+ERR: 非法操作:regist
+
+[ 2017-03-07T11:03:30+08:00 ] ::1 /index.php/Home/Member/regist.html
+ERR: 模板不存在:./Application/Home/View/Member/regist.html
+
+[ 2017-03-07T11:03:57+08:00 ] ::1 /index.php/Home/Member/css/common.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:03:57+08:00 ] ::1 /index.php/Home/Member/css/font-awesome.min.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:03:57+08:00 ] ::1 /index.php/Home/Member/js/jquery.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T11:03:57+08:00 ] ::1 /index.php/Home/Member/css/style.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:03:57+08:00 ] ::1 /index.php/Home/Member/js/dialog-plus-min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T11:03:57+08:00 ] ::1 /index.php/Home/Member/js/common.js
+ERR: 非法操作:js
+
+[ 2017-03-07T11:03:57+08:00 ] ::1 /index.php/Home/Member/css/simple.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:03:57+08:00 ] ::1 /index.php/Home/Member/js/form.js
+ERR: 非法操作:js
+
+[ 2017-03-07T11:03:57+08:00 ] ::1 /index.php/Home/Member/js/artDialog.js?skin=tinysimple
+ERR: 非法操作:js
+
+[ 2017-03-07T11:03:57+08:00 ] ::1 /index.php/Home/Member/js/iframeTools.js
+ERR: 非法操作:js
+
+[ 2017-03-07T11:03:57+08:00 ] ::1 /index.php/Home/Member/css/tiny-dialog.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:03:57+08:00 ] ::1 /index.php/Home/Member/js/dialog-plus-min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T11:03:57+08:00 ] ::1 /index.php/Home/Member/js/common.js
+ERR: 非法操作:js
+
+[ 2017-03-07T11:03:57+08:00 ] ::1 /index.php/Home/Member/css/style.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:03:57+08:00 ] ::1 /index.php/Home/Member/js/form.js
+ERR: 非法操作:js
+
+[ 2017-03-07T11:03:57+08:00 ] ::1 /index.php/Home/Member/js/artDialog.js?skin=tinysimple
+ERR: 非法操作:js
+
+[ 2017-03-07T11:03:57+08:00 ] ::1 /index.php/Home/Member/js/iframeTools.js
+ERR: 非法操作:js
+
+[ 2017-03-07T11:03:58+08:00 ] ::1 /index.php/Home/Member/js/form.js
+ERR: 非法操作:js
+
+[ 2017-03-07T11:03:58+08:00 ] ::1 /index.php/Home/Member/css/style.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:21:14+08:00 ] ::1 /index.php/Home/Member/js/artDialog.js?skin=tinysimple
+ERR: 非法操作:js
+
+[ 2017-03-07T11:21:14+08:00 ] ::1 /index.php/Home/Member/css/style.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:21:14+08:00 ] ::1 /index.php/Home/Member/css/tiny-dialog.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:21:14+08:00 ] ::1 /index.php/Home/Member/js/iframeTools.js
+ERR: 非法操作:js
+
+[ 2017-03-07T11:21:14+08:00 ] ::1 /index.php/Home/Member/js/form.js
+ERR: 非法操作:js
+
+[ 2017-03-07T11:21:14+08:00 ] ::1 /index.php/Home/Member/js/artDialog.js?skin=tinysimple
+ERR: 非法操作:js
+
+[ 2017-03-07T11:21:14+08:00 ] ::1 /index.php/Home/Member/js/iframeTools.js
+ERR: 非法操作:js
+
+[ 2017-03-07T11:21:14+08:00 ] ::1 /index.php/Home/Member/css/style.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:21:14+08:00 ] ::1 /index.php/Home/Member/js/form.js
+ERR: 非法操作:js
+
+[ 2017-03-07T11:21:15+08:00 ] ::1 /index.php/Home/Member/js/artDialog.js?skin=tinysimple
+ERR: 非法操作:js
+
+[ 2017-03-07T11:21:15+08:00 ] ::1 /index.php/Home/Member/css/style.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:21:15+08:00 ] ::1 /index.php/Home/Member/js/iframeTools.js
+ERR: 非法操作:js
+
+[ 2017-03-07T11:21:15+08:00 ] ::1 /index.php/Home/Member/css/tiny-dialog.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:21:15+08:00 ] ::1 /index.php/Home/Member/js/form.js
+ERR: 非法操作:js
+
+[ 2017-03-07T11:21:15+08:00 ] ::1 /index.php/Home/Member/js/artDialog.js?skin=tinysimple
+ERR: 非法操作:js
+
+[ 2017-03-07T11:21:15+08:00 ] ::1 /index.php/Home/Member/js/iframeTools.js
+ERR: 非法操作:js
+
+[ 2017-03-07T11:21:15+08:00 ] ::1 /index.php/Home/Member/js/form.js
+ERR: 非法操作:js
+
+[ 2017-03-07T11:21:15+08:00 ] ::1 /index.php/Home/Member/css/style.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:23:34+08:00 ] ::1 /index.php/Home/Member/css/tiny-dialog.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:23:36+08:00 ] ::1 /index.php/Home/Member/css/tiny-dialog.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:23:36+08:00 ] ::1 /index.php/Home/Member/css/tiny-dialog.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:23:36+08:00 ] ::1 /index.php/Home/Member/css/tiny-dialog.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:23:37+08:00 ] ::1 /index.php/Home/Member/css/tiny-dialog.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:23:38+08:00 ] ::1 /index.php/Home/Member/css/tiny-dialog.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:23:38+08:00 ] ::1 /index.php/Home/Member/css/tiny-dialog.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:23:40+08:00 ] ::1 /index.php/Home/Member/css/tiny-dialog.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:23:40+08:00 ] ::1 /index.php/Home/Member/css/tiny-dialog.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:23:40+08:00 ] ::1 /index.php/Home/Member/css/tiny-dialog.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:23:41+08:00 ] ::1 /index.php/Home/Member/css/tiny-dialog.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:23:41+08:00 ] ::1 /index.php/Home/Member/css/tiny-dialog.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:23:41+08:00 ] ::1 /index.php/Home/Member/css/tiny-dialog.css
+ERR: 非法操作:css
+
+[ 2017-03-07T11:23:42+08:00 ] ::1 /index.php/Home/Member/css/tiny-dialog.css
+ERR: 非法操作:css
+
+[ 2017-03-07T13:14:23+08:00 ] ::1 /index.php/Home/Member/regist.html
+ERR: 模板不存在:./Application/Home/View/Member/regist.html
+
+[ 2017-03-07T13:54:58+08:00 ] ::1 /index.php/Home/Member/chkcode.html+Math.random();
+ERR: 非法操作:chkcode.html+Math.random();
+
+[ 2017-03-07T14:01:03+08:00 ] ::1 /index.php/Home/Member/chkcode.html0.9051733725285074
+ERR: 非法操作:chkcode.html0.9051733725285074
+
+[ 2017-03-07T14:01:20+08:00 ] ::1 /index.php/Home/Member/chkcode.html&0.3594513066990599
+ERR: 非法操作:chkcode.html&0.3594513066990599
+
+[ 2017-03-07T14:33:13+08:00 ] ::1 /index.php/Home/Member/regist.html
+ERR: 1146:Table 'vipshop.vip_memeber' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `vip_memeber`
+
+[ 2017-03-07T14:34:54+08:00 ] ::1 /index.php/Home/Member/regist.html
+ERR: 1146:Table 'vipshop.vip_memeber' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `vip_memeber`
+
+[ 2017-03-07T14:37:00+08:00 ] ::1 /index.php/Home/Member/regist.html
+ERR: 1146:Table 'vipshop.vip_memeber' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `vip_memeber`
+
+[ 2017-03-07T15:22:52+08:00 ] ::1 /index.php/Home/Member/regist.html
+ERR: 模板不存在:./Application/Home/View/Member/regist.html
+
+[ 2017-03-07T15:22:55+08:00 ] ::1 /index.php/Home/Member/regist.html
+ERR: 模板不存在:./Application/Home/View/Member/regist.html
+
+[ 2017-03-07T15:32:08+08:00 ] ::1 /index.php/Home/Member/css/login.css
+ERR: 非法操作:css
+
+[ 2017-03-07T15:32:08+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T15:32:10+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T15:32:10+08:00 ] ::1 /index.php/Home/Member/css/login.css
+ERR: 非法操作:css
+
+[ 2017-03-07T15:32:10+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T15:32:10+08:00 ] ::1 /index.php/Home/Member/css/login.css
+ERR: 非法操作:css
+
+[ 2017-03-07T15:33:51+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T15:33:51+08:00 ] ::1 /index.php/Home/Member/css/login.css
+ERR: 非法操作:css
+
+[ 2017-03-07T15:33:53+08:00 ] ::1 /index.php/Home/Member/css/login.css
+ERR: 非法操作:css
+
+[ 2017-03-07T15:33:53+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T15:34:36+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T15:51:25+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T16:21:44+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T16:21:55+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T16:28:37+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T16:28:42+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T16:30:09+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T16:30:10+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T16:31:52+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T16:31:57+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:05:24+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:06:54+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:08:37+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:11:36+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:12:21+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:15:00+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:15:00+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:15:01+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:15:01+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:15:01+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:15:07+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:16:18+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:16:18+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:16:44+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:16:45+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:28:23+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:28:25+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:28:48+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:29:02+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:29:10+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:29:34+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:38:40+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:38:45+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:39:00+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:40:03+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:40:13+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:40:19+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:41:59+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:42:06+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:44:55+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:45:02+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:45:06+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:48:07+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:48:11+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:48:15+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:50:45+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:50:49+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:51:02+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:51:15+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:51:25+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:52:34+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:52:46+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:52:50+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:54:04+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:54:14+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T17:54:27+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:02:12+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:02:12+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:02:13+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:03:32+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:03:50+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:04:08+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:04:36+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:04:43+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:04:53+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:05:24+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:07:15+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:07:16+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:07:31+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:07:35+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:10:03+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:10:07+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:10:08+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:10:11+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:10:14+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:10:17+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:10:26+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:12:05+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:12:17+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:12:19+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:12:32+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:17:58+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:18:00+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:18:18+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:18:20+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:20:54+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:26:32+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:26:34+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:26:45+08:00 ] ::1 /index.php/Home/Member/js/jquery-1.8.0.min.js
+ERR: 非法操作:js
+
+[ 2017-03-07T18:55:03+08:00 ] ::1 /index.php/Home/Member/loginOut.html
+ERR: 非法操作:loginOut
+
+[ 2017-03-07T20:06:31+08:00 ] ::1 /index.php/Home/Index/goods/id/42.html
+ERR: Think\Model:alial方法不存在！
+
+[ 2017-03-07T20:06:46+08:00 ] ::1 /index.php/Home/Index/goods/id/36.html
+ERR: 1054:Unknown column 'b.attr_name' in 'field list'
+ [ SQL语句 ] : SELECT a.*,b.attr_name,b.attr_type FROM vip_goods_attr a left join vip_attribute on a.attr_id=b.id  WHERE a.goods_id = '36' 
+

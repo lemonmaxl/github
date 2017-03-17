@@ -1,0 +1,186 @@
+<layout name="Common/layout" />
+<include file="Common/nav" />
+    <!--  主控区域 -->
+<div id="main">
+     <link type="text/css" rel="stylesheet" href="__PUBLIC__/Home//css/product.css" />
+        <div class="bg-base">
+        <ol class="bread-crumb container">
+            <li><a href="<?php echo U('/'); ?>">首页</a></li>
+            <?php foreach($catData as $k => $v){ ?>
+            <li><a href="<?php echo U('Search/cat_search?cat_id='.$v['id']); ?>"><?php echo $v['cat_name'];?></a></li>
+            <?php } ?>
+        </ol>
+        </div>
+    <div class="container">
+    <div class="goods-detail mt10 clearfix" style="position: relative;">
+    <div class="content">
+        <!-- 筛选部分-->
+        <div style="height: 25px;line-height: 25px;border: 1px solid #e4e4e4;border-bottom: none;padding-left: 38px;">
+            当前筛选条件:
+            <?php
+            $filter_price = I('get.price');
+            if($filter_price){ ?>
+            <?php echo $filter_price; ?> <a href="<?php echo filterUrl('price'); ?>">[X]</a>
+            <?php } ?>
+            <!-- 循环输出当前筛选的属性值-->
+            <?php foreach(I('get.') as $k => $v):
+                if(strpos($k,'attr_') ===0):
+                    $_attr = explode('-',$v);
+            ?>
+            <?php echo $_attr[1]; ?>&ensp;&ensp;<?php echo $_attr[0]; ?> <a href="<?php echo filterUrl($k); ?>">[X]</a>
+            <?php endif;endforeach; ?>
+        </div>
+        <div id="selector">
+            <div class="spec-attr box">
+                <!-- 品牌-->
+                <!-- 价格-->
+                <?php if($price && !$filter_price){ ?>
+                <dl class="attr clearfix">
+                    <dt class="attr-key">价格：</dt>
+                    <dd class="attr-value">
+                        <?php foreach($price as $k => $v){ ?>
+                        <a href="__SELF__/price/<?php echo $v; ?>"><?php echo $v; ?><i></i></a>
+                       <?php } ?>
+                    </dd>
+                </dl>
+                <?php } ?>
+                <!-- 价格-->
+                <!--attribute-->
+                <?php foreach($gaData as $k => $v){
+                $v= array_unique($v);
+                // 从下标中提取属性Id和属性名称
+                $_k = explode('-',$k);
+                $_name = 'attr_'. $_k[1];
+                // 如果已经搜索了这个属性就不再显示属性栏
+                if(isset($_GET[$_name]))
+                    continue;
+                ?>
+                <dl class="attr clearfix">
+                    <dt class="attr-key"><?php echo $_k[0]; ?>：</dt>
+                    <dd class="attr-value">
+                        <?php foreach($v as $k1 => $v1){ ?>
+                        <a href="__SELF__/attr_<?php echo $_k[1]; ?>/<?php echo $v1;?>_<?php echo $_k[0]; ?>"><?php echo $v1; ?><i></i></a>
+                        <?php } ?>
+                    </dd>
+                </dl>
+                <?php } ?>
+                <!-- attribute -->
+            </div>
+            <div id="select-more">
+                <div class="attr-extra"><div></div></div>
+            </div>
+        </div>
+        <!-- 筛选部分-->
+        <!-- 商品部分-->
+        <div class="mt10 product_show  product-list  clearfix">
+            <div class="clearfix sortBarTop" style="">
+                <div class="sort-bar">
+                    <?php $odby = I('get.odby','xl-desc'); ?>
+                    <span>排序：</span>
+                    <a href="<?php echo filterUrl('odby'); ?>/odby/xl-desc" <?php if(strpos($odby,'xl')===0) echo 'class="current"';?>>销量</a>
+                    <!--<a href="" >评论数</a>-->
+                    <a  href="<?php echo filterUrl('odby');?>/odby/price-<?php echo $odby=='price-desc'?'asc':'desc'; ?>" <?php if(strpos($odby,'price')===0) echo 'class="current"';?>>
+                    价格
+                    <?php if(strpos($odby,'price')===0){ ?>
+                        <?php if($odby == 'price-desc'){ ?>
+                            ↓
+                        <?php }else{ ?>
+                            ↑
+                        <?php } ?>
+                    <?php } ?>
+                    </a>
+                    <a href="<?php echo filterUrl('odby'); ?>/odby/time-desc" <?php if(strpos($odby,'time')===0) echo 'class="current"'; ?>>最新</a>
+                </div>
+            </div>
+            <dl>
+                <dd>
+                <ul class="clearfix">
+                    <!-- goods-well-s -->
+                    <?php foreach($data as $k => $v){ ?>
+                    <li>
+                        <dl class="product">
+                            <dt class="img"><a href="<?php echo U('Index/goods?id='.$v['id']); ?>"><?php showImage($v['sm_logo'],210,210); ?></a></dt>
+                            <dd class="title"><a href="<?php echo U('Index/goods?id='.$v['id']); ?>"><?php echo $v['goods_name']; ?></a></dd>
+                            <dd><span class="price">￥<?php echo $v['shop_price']; ?></span></dd>
+                            <dd class="product-ext">&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="<?php echo U('Index/goods?id='.$v['id']); ?>" class=" btn btn-main fr"><i class="Hui-iconfont">&#xe6b9;</i> 立即购买</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <?php } ?>
+                    <!-- goods-well-e -->
+                </ul>
+            </dd>
+        </dl>
+        </div>
+        <div class="page mt20">
+            <?php echo $page; ?>
+        </div>
+        <!-- 商品部分-->
+    </div>
+</div>
+</div>
+
+<script>
+    var attr_extra = '';
+    $(".attr").each(function(i){
+        var self = $(this);
+        if(i>3){
+            //self.css("display","none");
+           // attr_extra += self.find(".attr-key:eq(0)").text()+"、";
+        }
+        if(self.find(".attr-value").get(0).scrollHeight>self.height()){
+            var span = $("<div class='o-more'>更多<b></b></div>");
+            self.append(span);
+            if(self.find('.select').size()>0){
+                span.html('收起<b></b>');
+                span.parent().addClass("unflod");
+            }
+            span.on("click",function(){
+                if($(this).text()=='更多'){
+                    $(this).html('收起<b></b>');
+                    $(this).parent().addClass("unflod");
+                }
+                else {
+                    $(this).html('更多<b></b>');
+                    $(this).parent().removeClass("unflod");
+                }
+            });
+        }
+    });
+
+    attr_extra = $(".attr:gt(3) .attr-key").text();
+    attr_extra = $.trim(attr_extra);
+    attr_extra = attr_extra.replace(/：/gi,'、');
+    attr_extra = attr_extra.replace(/、$/gi,'');
+    if($(".attr:gt(3)").size()>0){
+
+        if($(".attr:gt(3)").find(".select").size()>0){
+            $(".attr:gt(3)").css("display","block");
+            $(".attr-extra div:eq(0)").html('收起<b></b>');
+            $(".attr-extra").addClass("unflod");
+        }else{
+            $(".attr:gt(3)").css("display","none");
+            $(".attr-extra div:eq(0)").html('更多选项（'+attr_extra+'）<b></b>');
+            $(".attr-extra").removeClass("unflod");
+        }
+    }else{
+        $("#select-more").css("display","none");
+    }
+    $(".attr-extra:eq(0)").on("click",function(){
+        if($(".attr:hidden").size()>0){
+            $(".attr:gt(3)").css("display","block");
+            $(".attr-extra div:eq(0)").html('收起<b></b>');
+            $(".attr-extra").addClass("unflod");
+        }else{
+            $(".attr:gt(3)").css("display","none");
+            $(".attr-extra div:eq(0)").html('更多选项（'+attr_extra+'）<b></b>');
+            $(".attr-extra").removeClass("unflod");
+        }
+
+    })
+
+</script>
+
+</div>
+    <!--  主控区域 -->

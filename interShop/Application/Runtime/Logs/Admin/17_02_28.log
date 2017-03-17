@@ -1,0 +1,43 @@
+[ 2017-02-28T11:16:42+08:00 ] ::1 /index.php/Admin/Role/lst.html
+ERR: 无法加载控制器:Role
+
+[ 2017-02-28T11:16:42+08:00 ] ::1 /index.php/Admin/Role/lst.html
+ERR: 无法加载控制器:Role
+
+[ 2017-02-28T15:58:26+08:00 ] ::1 /index.php/Admin/Role/add.html
+ERR: 1048:Column 'role_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `vip_role_pri` (`role_id`,`pri_id`) VALUES (NULL,'1')
+
+[ 2017-02-28T18:34:45+08:00 ] ::1 /admin/administrative/login
+ERR: 无法加载控制器:Administrative
+
+[ 2017-02-28T18:34:53+08:00 ] ::1 /admin/admini/login
+ERR: 无法加载控制器:Admini
+
+[ 2017-02-28T18:35:00+08:00 ] ::1 /admin/admin/login
+ERR: 模板不存在:./Application/Admin/View/Admin/login.html
+
+[ 2017-02-28T18:36:56+08:00 ] ::1 /admin/admin/static/h-ui/css/H-ui.min.css
+ERR: 非法操作:static
+
+[ 2017-02-28T18:36:56+08:00 ] ::1 /admin/admin/static/h-ui.admin/css/H-ui.login.css
+ERR: 非法操作:static
+
+[ 2017-02-28T18:36:56+08:00 ] ::1 /admin/admin/static/h-ui.admin/css/style.css
+ERR: 非法操作:static
+
+[ 2017-02-28T18:36:56+08:00 ] ::1 /admin/admin/static/h-ui/js/H-ui.min.js
+ERR: 非法操作:static
+
+[ 2017-02-28T18:36:56+08:00 ] ::1 /admin/admin/lib/jquery/1.9.1/jquery.min.js
+ERR: 非法操作:lib
+
+[ 2017-02-28T18:36:56+08:00 ] ::1 /admin/admin/lib/Hui-iconfont/1.0.8/iconfont.css
+ERR: 非法操作:lib
+
+[ 2017-02-28T18:36:56+08:00 ] ::1 /admin/admin/static/h-ui/js/H-ui.min.js
+ERR: 非法操作:static
+
+[ 2017-02-28T18:58:17+08:00 ] ::1 /index.php/Admin/Index/product-brand.html
+ERR: 非法操作:product-brand
+

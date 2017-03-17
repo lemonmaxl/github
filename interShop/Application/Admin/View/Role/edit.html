@@ -1,0 +1,31 @@
+<layout name="layout" />
+<div class="page-container">
+    <form class="form form-horizontal" id="form-admin-add" method="POST" action="__SELF__">
+        <input type="hidden" name="id" value="<?php echo $data['id']; ?>" />
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>角色名称：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="<?php echo $data['role_name']; ?>"   name="role_name" style="width: 20%;">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>权限列表：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <?php foreach($priData as $k => $v){
+                    if(in_array($v['id'], $pri_id))
+                        $check = 'checked="checked"';
+                    else
+                        $check = '';
+                ?>
+                <?php echo str_repeat('-',$v['level']*8);?><input type="checkbox" <?php echo $check; ?> value="<?php echo $v['id'];?>"   name="pri_id[]"  /><?php echo $v['pri_name'];?><br/>
+                <?php } ?>
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+                <input class="btn btn-success radius" type="reset" value="&nbsp;&nbsp;重置&nbsp;&nbsp;">
+            </div>
+        </div>
+    </form>
+</div>

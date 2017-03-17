@@ -1,0 +1,124 @@
+[ 2017-03-03T09:49:14+08:00 ] ::1 /index.php/Admin/Goods/ajaxGetAttr/type_id/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001624s ]
+SQL: SHOW COLUMNS FROM `vip_admin` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `vip_attribute` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vip_attribute` WHERE `type_id` = '5'  [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000855s ]
+
+[ 2017-03-03T09:49:15+08:00 ] ::1 /index.php/Admin/Goods/ajaxGetAttr/type_id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
+SQL: SHOW COLUMNS FROM `vip_admin` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `vip_attribute` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `vip_attribute` WHERE `type_id` = '3'  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000786s ]
+
+[ 2017-03-03T09:49:16+08:00 ] ::1 /index.php/Admin/Goods/ajaxGetAttr/type_id/4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+SQL: SHOW COLUMNS FROM `vip_admin` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `vip_attribute` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vip_attribute` WHERE `type_id` = '4'  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2017-03-03T09:52:53+08:00 ] ::1 /index.php/Admin/Goods/ajaxDelGoodsAttr/gaid/25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+SQL: SHOW COLUMNS FROM `vip_admin` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `vip_goods_attr` [ RunTime:0.0005s ]
+SQL: DELETE FROM `vip_goods_attr` WHERE `id` = 25 [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2017-03-03T09:53:29+08:00 ] ::1 /index.php/Admin/Goods/ajaxDelGoodsAttr/gaid/undefined
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+SQL: SHOW COLUMNS FROM `vip_admin` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `vip_goods_attr` [ RunTime:0.0006s ]
+SQL: DELETE FROM `vip_goods_attr` WHERE `id` = 0 [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2017-03-03T09:53:31+08:00 ] ::1 /index.php/Admin/Goods/ajaxDelGoodsAttr/gaid/undefined
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+SQL: SHOW COLUMNS FROM `vip_admin` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `vip_goods_attr` [ RunTime:0.0004s ]
+SQL: DELETE FROM `vip_goods_attr` WHERE `id` = 0 [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2017-03-03T09:54:48+08:00 ] ::1 /index.php/Admin/Goods/ajaxDelGoodsAttr/gaid/12
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+SQL: SHOW COLUMNS FROM `vip_admin` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `vip_goods_attr` [ RunTime:0.0003s ]
+SQL: DELETE FROM `vip_goods_attr` WHERE `id` = 12 [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2017-03-03T09:54:50+08:00 ] ::1 /index.php/Admin/Goods/ajaxDelGoodsAttr/gaid/13
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+SQL: SHOW COLUMNS FROM `vip_admin` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `vip_goods_attr` [ RunTime:0.0004s ]
+SQL: DELETE FROM `vip_goods_attr` WHERE `id` = 13 [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000709s ]
+
+[ 2017-03-03T18:00:38+08:00 ] ::1 /index.php/Admin/Goods/ajaxGetAttr/type_id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+SQL: SHOW COLUMNS FROM `vip_admin` [ RunTime:0.0011s ]
+SQL: select count(c.id) has from vip_admin_role a LEFT JOIN vip_role_pri b ON a.role_id=b.role_id LEFT JOIN vip_privilege c ON b.pri_id=c.id where a.admin_id=3 and c.module_name="Admin" and c.controller_name="Goods" and c.action_name="ajaxGetAttr" [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `vip_attribute` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `vip_attribute` WHERE `type_id` = '3'  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2017-03-03T18:00:43+08:00 ] ::1 /index.php/Admin/Goods/ajaxGetAttr/type_id/4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+SQL: SHOW COLUMNS FROM `vip_admin` [ RunTime:0.0011s ]
+SQL: select count(c.id) has from vip_admin_role a LEFT JOIN vip_role_pri b ON a.role_id=b.role_id LEFT JOIN vip_privilege c ON b.pri_id=c.id where a.admin_id=3 and c.module_name="Admin" and c.controller_name="Goods" and c.action_name="ajaxGetAttr" [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `vip_attribute` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `vip_attribute` WHERE `type_id` = '4'  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2017-03-03T18:00:44+08:00 ] ::1 /index.php/Admin/Goods/ajaxGetAttr/type_id/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+SQL: SHOW COLUMNS FROM `vip_admin` [ RunTime:0.0008s ]
+SQL: select count(c.id) has from vip_admin_role a LEFT JOIN vip_role_pri b ON a.role_id=b.role_id LEFT JOIN vip_privilege c ON b.pri_id=c.id where a.admin_id=3 and c.module_name="Admin" and c.controller_name="Goods" and c.action_name="ajaxGetAttr" [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `vip_attribute` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vip_attribute` WHERE `type_id` = '5'  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000732s ]
+

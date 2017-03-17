@@ -1,0 +1,239 @@
+<!Doctype html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="bookmark" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/common.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/orderlist.css">
+    <script src="__PUBLIC__/Home/js/navjs/global.js"></script>
+    <script src="__PUBLIC__/Home/js/common.js"></script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/HJ-icon/iconfont.css" />
+    <title><?php echo $_page_title;?></title>
+</head>
+<body>
+<script type="text/javascript" charset="UTF-8" src="__PUBLIC__/Home/js/artdialog/artDialog.js?skin=opera"></script>
+<script type="text/javascript" charset="UTF-8" src="__PUBLIC__/Home/js/artdialog/plugins/iframeTools.js"></script>
+    <!--  头部区域 -->
+    <div id="header">
+        <div class="topbar">
+            <div class="layout-2 container">
+                <div class="sub-1">欢迎来到好家唯品,用心即所得！
+                </div>
+                <div class="sub-2">
+                    <ul class="nav-x">
+                        <li class="item down">
+                            <a href="">会员中心 <i class="Hui-iconfont">&#xe6d5;</i></a>
+                            <div class="dropdown user-box">
+                                <ul class="user-center">
+                                    <li class="link"><a href="<?php echo U('My/order'); ?>">我的订单</a></li>
+                                    <li class="link"><a href="<?php echo U('My/order'); ?>">商品评价</a></li>
+                                    <li class="link"><a href="<?php echo U('My/order'); ?>">我的消息</a></li>
+                                    <li class="link"><a href="<?php echo U('My/order'); ?>">收货地址</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item split"></li>
+                        <li class="item down"><a href="">关注好家</a>
+                            <div class="dropdown">
+                                <img src="__PUBLIC__/Home/static/images/vxcode.jpg" width="150px">
+                            </div>
+                        </li>
+                        <li class="item split"></li>
+                        <li class="item"><a href="<?php echo U('My/order'); ?>">我的订单</a></li>
+                        <li class="item split"></li>
+                        <li class="item" id="loginfo"></li>
+                        <a href="<?php echo U('/')?>" style="color: #F22E00;float: right;padding-right: 80px;">好家唯品首页</a>
+                    </ul>
+                    <script>
+                        $.ajax({
+                            type:"GET",
+                            url:"<?php echo U('Member/chkLogin');?>",
+                            dataType : "json",
+                            success : function(data){
+                                if(data.login == '1'){
+                                    $("#loginfo").html('Hi，'+data.username+' <a class="normal" href="<?php echo U('Member/loginOut');?>">退出</a>');
+                                }else{
+                                    $("#loginfo").html('<a class="normal" href="<?php echo U('Member/login');?>">登录</a>/<a class="normal" href="<?php echo U('Member/regist');?>">注册</a>');
+                                }
+                            }
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="container head-main">
+            <a href="<?php echo U('/'); ?>" class="sub-1 logo" style="background-image: url(__PUBLIC__/Home/static/images/logo.png);"></a>
+            <div id='cart_navs'>
+                <ul class="crumbs clearfix mt15 step-4">
+                    <li >4、订购完成<em></em><i></i></li>
+                    <li >3、选择支付<em></em><i></i></li>
+                    <li class="pass">2、确认订单信息<em></em><i></i></li>
+                    <li class="pass">1、购物车<em></em><i></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--  头部区域 -->
+
+    <!--  主控区域 -->
+    <div id="main" class="simple-main">
+<div class="container">
+    <div class="order-info mt20">
+        <form action="__SELF__" method="post">
+            <div class="clearfix address address-box">
+                <h2><b class="fl">选择收货地址：</b>
+                    <a class="btn btn-main btn-mini fr" href="<?php echo U('My/add_lst');?>" target="_blank">管理地址</a>
+                </h2>
+                <ul class="address-list clearfix">
+                    <?php foreach($addrData as $k => $v){ ?>
+                    <li>
+                        <a href="javascript:;" class="upaddr"> 修改地址 </a>
+                        <div class="address-info " >
+                            <input type="radio" name="address_id" value="<?php echo $v['id']; ?>" <?php if($v['is_default'] == 1) echo 'checked="checked"';?>><label><?php echo $v['province']; ?> <strong><?php echo $v['city']; ?> (<?php echo $v['shr_name']; ?> 收) </label>
+                            <p></strong><?php echo $v['area']; ?> <?php echo $v['addr']; ?> <?php echo $v['mobile']; ?></p>
+                        </div>
+                        <i class="vipcon-selected Hui-iconfont">&#xe617;</i>
+                    </li>
+                    <?php } ?>
+                </ul>
+                <div><a id="address_other" class="btn btn-main btn-mini" href="javascript:;">使用新地址</a></div>
+            </div>
+            <h2 class="f14 mt20">支付方式：</h2>
+            <div class="clearfix">
+                <ul class="payment-list">
+                    <li ><input type="radio" name="payment_id"   checked="checked" value="1"><label><b>支付宝支付</b> </label>
+                    <div><img src="__PUBLIC__/Home/static/images/pay_alipay.gif"></div>
+                    </li>
+                </ul>
+            </div>
+            <h2 class="f14 mt20">商品清单：</h2>
+            <div class="mt15  clearfix">
+        <table width="100%" class="simple">
+            <tr>
+                <th style="width:60px;">商品</th>
+                <th>名称</th>
+                <th style="width:120px;">规格</th>
+                <th style="width:100px;">单价</th>
+                <th style="width:120px;">数量</th>
+                <th style="width:100px;">优惠</th>
+                <th style="width:100px;">小计</th>
+           </tr>
+            <?php
+            $totalPrice = 0;
+            foreach($data as $k => $v){ ?>
+           <tr goods_id="<?php echo $v['goods_id'];?>" goods_attr_id_list="<?php echo $v['goods_attr_id_list'];?>">
+                <td>
+                    <a href="<?php echo U('Index/goods?id='.$v['goods_id']);?>" target="_blank"><?php showImage($v['sm_logo'],50); ?></a>
+                </td>
+               <td>
+                   <a href="<?php echo U('Index/goods?id='.$v['goods_id']);?>" target="_blank"><?php echo $v['goods_name']; ?></a>
+               </td>
+               <td>
+                   <?php foreach($v['gnData'] as $k1 => $v1){ ?>
+                   <p><?php echo $v1['attr_name'];?> ：<?php echo $v1['attr_value']; ?></p>
+                   <?php } ?>
+               </td>
+               <td class="tr"><?php echo $v['price'];?></td>
+               <td class="tc">
+                   <div  class="buy-num-bar buy-num clearfix"><?php echo $v['goods_number']; ?></div>
+               </td>
+               <td class="prom tc"></td>
+               <td class="amount red tr">
+                   <?php
+                        $xj = $v['price'] * $v['goods_number'];
+                        $totalPrice += $xj;
+                        echo $xj;
+                    ?>
+               </td>
+           </tr>
+            <?php } ?>
+        </table>
+        <table class="mt10 simple noborder form">
+            <tr>
+                <td>
+                    <p>订单备注信息：<input type="text" name="user_remark" style="width:346px;"></p>
+                </td>
+                <td width="260" class="tr">购物车商品合计：</td>
+                <td width="140">
+                    <div class="mb10 mt10" style=" background: #f0f0f0;"><span class="fr"><span style=""><span class="currency-symbol f18">￥</span><b class="cart-total red f18" id="total-amount"><?php echo $totalPrice; ?> </b></span></span></div>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                </td>
+                <td class="tr">运费：</td>
+                <td>
+                    <p class="fr">+ <b id="fare" data-weight="200">0.00</b></p>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                </td>
+                <td class="tr orange">送积分：</td>
+                <td>
+                    <p class="fr orange"><b id="point" data-point="0">0</b></p>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="mb10 mt10 clearfix" style="padding:10px; background: #f0f0f0;">
+        <span class="fr f14">应付总额：<span style="font-size: 24px;font-family: tahoma"><span class="currency-symbol">￥</span><b class="cart-total red" id="real-total"><?php echo $totalPrice;?></b></span></span>
+    </div>
+    <div class=" clearfix mt10">
+        <input name="" type="hidden" value="">
+        <p class=""><input type="submit" class="btn btn-main fr" value="提交订单"></p>
+    </div>
+    <input type='hidden' name='token_order' value=''/>
+</form>
+</div>
+</div>
+<script type="text/javascript">
+      $("#address_other").on("click",function(){
+        art.dialog.open('/index.php/Home/Address/add',{width:960,height:460,lock:true});
+        return false;
+    })
+    $(".address-list .upaddr").each(function(){
+
+        $(this).on("click",function(){
+            art.dialog.open('/index.php/Home/Address/edit',{width:960,height:460,lock:true});
+            return false;
+        });
+    });
+
+    $(".address-list li").each(function(){
+        $(this).has("input[name='address_id']:checked").addClass("selected");
+        $(this).on("click",function(){
+            $(".address-list li").removeClass("selected");
+            $("input[name='address_id']").removeProp("checked");
+            $("input[name='address_id']",this).prop("checked","checked");
+            $(this).addClass("selected");
+            $("a.default").hide();
+            $("a.default",this).show();
+            var id = $("input[name='address_id']",this).val();
+        });
+    });
+    FireEvent($(".address-list  input[name='address_id']:checked").get(0),"click");
+</script>
+
+    </div>
+    <!--  主控区域 -->
+
+<div id="footer">
+    <div class="copyright">
+        <div class="container bootom">
+            <div class="sub-2">
+                <span>Powered by <a href="http://www.haojiavip.com">好家唯品</a></span> © 2015-2017 <a href="http://www.haojiavip.com">haojiavip.com</a> . 保留所有权利 。
+            </div>
+            <div class="sub-3">
+                <a target="_blank" href="#"><img src="__PUBLIC__/Home/static/images/f-logo-2.png" alt="诚信网站"></a>
+                <a target="_blank" href="#"><img src="__PUBLIC__/Home/static/images/f-logo-1.png" alt="诚信网站"></a>
+                <a target="_blank" href="#"><img src="__PUBLIC__/Home/static/images/f-logo-3.png" alt="网上交易保障中心"></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<?php if (!defined('THINK_PATH')) exit();?><!Doctype html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="bookmark" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/Public/Home/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/Public/Home/css/orderlist.css">
+    <script src="/Public/Home/js/navjs/global.js"></script>
+    <script src="/Public/Home/js/common.js"></script>
+    <title><?php echo $_page_title;?></title>
+</head>
+<body>
+<!--  头部区域 -->
+<div id="header">
+    <div class="topbar">
+        <div class="layout-2 container">
+            <div class="sub-1">欢迎来到好家唯品,用心即所得！
+            </div>
+            <div class="sub-2">
+                <ul class="nav-x">
+                    <li class="item down">
+                        <a href="">会员中心 <i class="Hui-iconfont">&#xe6d5;</i></a>
+                        <div class="dropdown user-box">
+                            <ul class="user-center">
+                                <li class="link"><a href="<?php echo U('My/order'); ?>">我的订单</a></li>
+                                <li class="link"><a href="<?php echo U('My/order'); ?>">商品评价</a></li>
+                                <li class="link"><a href="<?php echo U('My/order'); ?>">我的消息</a></li>
+                                <li class="link"><a href="<?php echo U('My/order'); ?>">收货地址</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item split"></li>
+                    <li class="item down"><a href="">关注好家</a>
+                        <div class="dropdown">
+                            <img src="/Public/Home/static/images/vxcode.jpg" width="150px">
+                        </div>
+                    </li>
+                    <li class="item split"></li>
+                    <li class="item"><a href="<?php echo U('My/order'); ?>">我的订单</a></li>
+                    <li class="item split"></li>
+                    <li class="item" id="loginfo"></li>
+                    <a href="<?php echo U('/')?>" style="color: #F22E00;float: right;padding-right: 80px;">好家唯品首页</a>
+                </ul>
+                <script>
+                    $.ajax({
+                        type:"GET",
+                        url:"<?php echo U('Member/chkLogin');?>",
+                        dataType : "json",
+                        success : function(data){
+                            if(data.login == '1'){
+                                $("#loginfo").html('Hi，'+data.username+' <a class="normal" href="<?php echo U('Member/loginOut');?>">退出</a>');
+                            }else{
+                                $("#loginfo").html('<a class="normal" href="<?php echo U('Member/login');?>">登录</a>/<a class="normal" href="<?php echo U('Member/regist');?>">注册</a>');
+                            }
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="container head-main">
+        <a href="<?php echo U('/'); ?>" class="sub-1 logo" style="background-image: url(/Public/Home/static/images/logo.png);"></a>
+        <div id='cart_navs'>
+            <ul class="crumbs clearfix mt15 step-4">
+                <li >4、订购完成<em></em><i></i></li>
+                <li class="pass">3、选择支付<em></em><i></i></li>
+                <li class="pass">2、确认订单信息<em></em><i></i></li>
+                <li class="pass">1、购物车<em></em><i></i></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--  头部区域 -->
+<div class="status-bar">
+    <span><i class="icon-success-48"></i>订单已成功提交！</span>
+</div>
+    <!--  主区域 -->
+<div class="container">
+    <form action="<?php echo U('Order/succe?order_id='.$order_id); ?>" method="post" target="_blank" style="height: 480px;">
+        <input type="hidden" name="order_id" value="<?php echo $order_id;?>">
+
+
+        <div class="mt10">
+            <a href="javascript:;" id="other_pay" style="line-height: 32px;height:32px;font-weight:800"><i class="icon-plus-1-16"></i> 其它支付方式：</a>
+        </div>
+            <div class="clearfix" id="payment-list" style="display:none;">
+                <ul class="payment-list">
+                    <li >
+                        <input type="radio" id="balance" name="payment_id" value="1" checked="checked" data-name="预存款支付"><label><b>支付宝支付</b> </label>
+                    <div>
+                        <img src="/Public/Home/static/images/pay_alipay.gif">
+                    </div>
+                    </li>
+                </ul>
+            </div>
+
+           <div class="mt10 mb20 clearfix">
+               <p class="tc"><input class="btn btn-main" type="submit" value="立即支付"></p>
+           </div>
+
+    </form>
+</div>
+
+
+<script type="text/javascript">
+    $("#other_pay").on("click",function(){
+        $("#payment-list").toggle();
+        if($("i",this).hasClass("icon-plus-1-16")){
+            $("i",this).removeClass("icon-plus-1-16");
+            $("i",this).addClass("icon-minus-1-16");
+        }
+        else{
+            $("i",this).removeClass("icon-minus-1-16");
+            $("i",this).addClass("icon-plus-1-16");
+        }
+    });
+</script>
+    <!--  主区域 -->
+
+<div id="footer">
+    <div class="copyright">
+        <div class="container bootom">
+            <div class="sub-2">
+                <span>Powered by <a href="http://www.haojiavip.com">好家唯品</a></span> © 2015-2017 <a href="http://www.haojiavip.com">haojiavip.com</a> . 保留所有权利 。
+            </div>
+            <div class="sub-3">
+                <a target="_blank" href="#"><img src="/Public/Home/static/images/f-logo-2.png" alt="诚信网站"></a>
+                <a target="_blank" href="#"><img src="/Public/Home/static/images/f-logo-1.png" alt="诚信网站"></a>
+                <a target="_blank" href="#"><img src="/Public/Home/static/images/f-logo-3.png" alt="网上交易保障中心"></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

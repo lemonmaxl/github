@@ -1,0 +1,56 @@
+.w1000{ width:1000px; margin:0 auto;}
+.w1020{ width:1020px; margin:0 auto;}
+body{overflow-x:hidden;}
+.headNav{ height:38px; background-color:none;border-bottom: 2px solid #cf000e}
+.headNav .navCon{ height:38px; position:relative; z-index:11;}
+.headNav .navCon .navCon-cate{ width:210px; height:38px; line-height:38px; font-size:14px; font-weight:bold; text-indent:10px; background:#cf000e;/*#A21C1D*/ color:#FFF; position:relative;}
+
+.headNav .navCon .navCon-menu li{float: left;height: 38px;line-height: 38px;overflow: hidden;text-align: center;width: 100px;}
+.headNav .navCon .navCon-menu li a{color: #555;display:block;font-size: 14px; font-weight: bold;height: 38px; line-height:37px;text-decoration: none;width: 100px;}
+.headNav .navCon .navCon-menu li a:hover, .cur {color: #666666;text-decoration: none;}
+.headNav .navCon .navCon-menu li a:hover {background:none;color: #d5182a;}
+.headNav .navCon .navCon-menu .curMenu a.current{color:#cf000e !important}
+/*.headNav .navCon .navCon-cate .navCon-cate-title{ background:url("../image/header_menu_ico.gif") no-repeat 176px center;}*/
+.headNav .navCon .navCon-cate .navCon-cate-title a{ color:#ffffff;}
+.headNav .navCon .navCon-cate .navCon-cate-title a:hover{ text-decoration:none;}
+
+.headNav .navCon .navCon-cate .cateMenu{ position:absolute; left:0px; box-shadow:4px 2px 5px rgba(0, 0, 0, 0.3); background:rgba(00,00,00,.8); cursor:pointer;}
+.headNav .navCon .navCon-cate .cateMenu li{ width:210px;overflow:hidden; border-bottom:1px solid #7d0000;border-top:1px solid #a40000;}
+.headNav .navCon .navCon-cate .cateMenu li .cate-tag{ width:190px; padding:10px 5px 10px 15px; overflow:hidden; line-height:25px;}
+.headNav .navCon .navCon-cate .cateMenu li .cate-tag strong{ height:25px; line-height:25px; width:172px; display:block; text-indent:0px;}
+.headNav .navCon .navCon-cate .cateMenu li .cate-tag strong a{ font-size:14px; font-weight:bold; color:#fff;}
+.headNav .navCon .navCon-cate .cateMenu li .cate-tag .listModel{text-indent:0px; }
+.headNav .navCon .navCon-cate .cateMenu li .cate-tag .listModel p{ height:26px;}
+.headNav .navCon .navCon-cate .cateMenu li .cate-tag .listModel a{ font-size:12px; font-weight:normal; color:#c8c8c8;text-indent:0px; padding:0 11px 0 0;}
+.headNav .navCon .navCon-cate .cateMenu .on{ background:#665446; *margin-bottom:-4px; }
+.headNav .navCon .navCon-cate .cateMenu .on .cate-tag .listModel a{ color:#FFFFFF;}
+
+.float-list-dnav {background: none repeat scroll 0 0 #8D0000;clear: both;font-size: 14px;font-weight: bold;height: 47px;line-height: 47px; width: 210px;}
+.float-list-dnav a {color: #FFFFFF;margin: 0 10px 0 10px;}
+.float-list-dnav a:hover{ color:#ffffff;}
+
+.headNav .navCon .navCon-cate .cateMenu .list-item{ width:750px; padding:10px 10px 20px 10px; border:1px solid #A7A7A7; border-left:none; background:#FFFFFF; box-shadow:4px 3px 5px rgba(0, 0, 0, 0.5); background:#FFF; position:absolute; left:210px; top:0px;}
+.headNav .navCon .navCon-cate .cateMenu .list-item .itemleft{ width:510px; float:left;}
+.headNav .navCon .navCon-cate .cateMenu .list-item .itemright{ width:220px; float:right;}
+.headNav .navCon .navCon-cate .cateMenu .list-item dl{ padding-left:10px;}
+.headNav .navCon .navCon-cate .cateMenu .list-item dt{ color:#665446; font-size:14px; text-indent:0px; border-bottom:2px solid #665446; margin-bottom:8px; font-family:"微软雅黑";}
+.headNav .navCon .navCon-cate .cateMenu .list-item dd{font-size:12px; font-weight:normal; text-indent:0px; line-height:26px;font-family:"微软雅黑";}
+.headNav .navCon .navCon-cate .cateMenu .list-item dd a{ color:#646464; margin-right:5px; width:75px; height:22px; overflow:hidden; display:block; float:left; margin-bottom:5px; }
+.headNav .navCon .navCon-cate .cateMenu .list-item dd a:hover{ color:#000;}
+
+.headNav .navCon .navCon-cate .cateMenu .list-item .itemright .news-list{ padding-left:10px;}
+.headNav .navCon .navCon-cate .cateMenu .list-item .itemright .news-list p{ line-height:24px; text-indent:0px; font-size:12px; font-weight:normal; color:#000;}
+.headNav .navCon .navCon-cate .cateMenu .list-item .itemright .news-list p a{ color:#646464;}
+.headNav .navCon .navCon-cate .cateMenu .list-item .itemright .news-list p a:hover{ color:#000;}
+
+.headNav .navCon .navCon-cate .cateMenu .list-item .itemright .ad-list{ padding-left:10px;}
+.headNav .navCon .navCon-cate .cateMenu .list-item .itemright .ad-list a{ display:block; width:210px; height:100px; text-indent:0px; margin-bottom:8px; overflow:hidden;}
+
+
+
+
+
+
+
+
+

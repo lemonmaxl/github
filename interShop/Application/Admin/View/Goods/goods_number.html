@@ -1,0 +1,83 @@
+<layout name="layout" />
+<!-- 列表 -->
+<div class="page-container">
+    <form action="__SELF__" method="post" name="listForm">
+        <div class="mt-20">
+            <table class="table table-border table-bordered table-bg table-hover table-sort">
+                <thead>
+                <tr class="text-c">
+                    <?php foreach($gaInfo as $k => $v){ ?>
+                    <th><?php echo $v[0]['attr_name']?></th>
+                    <?php } ?>
+                    <th >库存量</th>
+                    <th style="width: 120px;">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php if($gnData){?>
+                    <?php foreach($gnData as $k0 => $v0){
+                        $_attr = explode(',',$v0['attr_list']);
+                    ?>
+                <tr class="text-c va-m">
+                    <?php foreach ($gaInfo as $k => $v): ?>
+                    <td>
+                    <select name="gaid[]">
+                        <option value="">请选择</option>
+                        <?php foreach($v as $k1 => $v1){
+                            if(in_array($v1['id'],$_attr))
+                                $select = 'selected="selected"';
+                            else
+                                $select = '';
+                        ?>
+                        <option <?php echo $select;?> value="<?php echo $v1['id'];?>"><?php echo $v1['attr_value']?></option>
+                        <?php } ?>
+                    </select>
+                    </td>
+                    <?php endforeach; ?>
+                    <td><input type="text" value="<?php echo $v0['goods_number'];?>" name="gn[]" class="input-text" style="width:30%;"/></td>
+                    <td>
+                        <input onclick="addTr(this)" type="button" value="<?php echo $k0==0?'添加':'移除';?>" class="btn btn-success radius"/>
+                    </td>
+                </tr>
+                <?php } ?>
+                <?php }else{ ?>
+                <tr class="text-c va-m">
+                    <?php foreach ($gaInfo as $k => $v): ?>
+                    <td>
+                        <select name="gaid[]">
+                            <option value="">请选择</option>
+                            <?php foreach($v as $k1 => $v1){?>
+                            <option value="<?php echo $v1['id'];?>"><?php echo $v1['attr_value']?></option>
+                            <?php } ?>
+                        </select>
+                    </td>
+                    <?php endforeach; ?>
+                    <td><input type="text" value="" name="gn[]" class="input-text" style="width:30%;"/></td>
+                    <td>
+                        <input onclick="addTr(this)" type="button" value="添加" class="btn btn-success radius"/>
+                    </td>
+                </tr>
+                <?php } ?>
+                </tbody>
+            </table>
+        </div>
+        <div class="row cl mt-20">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 提交</button>
+                <button  class="btn btn-default radius" type="reset"><i class="Hui-iconfont">&#xe68f;</i> 重置</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script>
+    function addTr(btn){
+        var tr = $(btn).parent().parent();
+        if($(btn).val() == '添加'){
+            var newTr = tr.clone();
+            newTr.find(":button").val('移除');
+            $("tbody").append(newTr);
+        }else{
+            tr.remove();
+        }
+    }
+</script>

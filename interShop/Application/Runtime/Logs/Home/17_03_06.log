@@ -1,0 +1,19 @@
+[ 2017-03-06T11:34:48+08:00 ] ::1 /index.php/Home/Index/%7Bhead_pic%7D
+ERR: 非法操作:{head_pic}
+
+[ 2017-03-06T13:24:58+08:00 ] ::1 /index.php/Home/Index/index.html
+ERR: 1054:Unknown column 'promote_pice' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`sm_logo`,`goods_name`,`promote_pice` FROM `vip_goods` WHERE `is_on_sale` = 1 AND `promote_price` = 0 LIMIT 5  
+
+[ 2017-03-06T14:14:38+08:00 ] ::1 /index.php/Home/Index/index.html
+ERR: 1054:Unknown column 'mid_logo' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`sm_logo`,`goods_name`,`promote_price` FROM `vip_goods` WHERE `is_on_sale` = 1 AND `promote_price` <> 0 AND `promote_start_date` <= '2017-03-06 14:14:38' AND `promote_end_date` >= '2017-03-06 14:14:38' LIMIT 5  
+
+[ 2017-03-06T14:23:41+08:00 ] ::1 /index.php/Home/Index/index.html
+ERR: 1054:Unknown column 'mid_logo' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`sm_logo`,`goods_name`,`promote_price` FROM `vip_goods` WHERE `is_on_sale` = 1 AND `promote_price` <> 0 AND `promote_start_date` <= '2017-03-06 14:23:41' AND `promote_end_date` >= '2017-03-06 14:23:41' LIMIT 5  
+
+[ 2017-03-06T14:23:42+08:00 ] ::1 /index.php/Home/Index/index.html
+ERR: 1054:Unknown column 'mid_logo' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`mid_logo`,`sm_logo`,`goods_name`,`promote_price` FROM `vip_goods` WHERE `is_on_sale` = 1 AND `promote_price` <> 0 AND `promote_start_date` <= '2017-03-06 14:23:42' AND `promote_end_date` >= '2017-03-06 14:23:42' LIMIT 5  
+
